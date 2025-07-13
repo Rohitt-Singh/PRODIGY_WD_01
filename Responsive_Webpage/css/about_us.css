@@ -1,0 +1,97 @@
+.nav-item {
+    margin: 0px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+.nav-item:hover {
+    background-color: rgb(246, 246, 246);
+  }
+.active {
+    background-color: rgb(246, 246, 246);
+    color: white;
+  }
+.photo img {
+    width: 56vh;
+    border-radius: 50px;
+    /* position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+    animation-delay: 1s; */
+}
+.about {
+    display: flex;
+    margin: 100px 100px;
+    justify-content: center;
+    color: white;
+}
+body {
+    background-color: #217798;
+}
+p {
+    font-size: 20px;
+}
+.content {
+    width: 50%;
+}
+.photo {
+    align-self: center;
+}
+.form-group {
+    position: relative;
+    display: flex;
+    flex-wrap: unwrap;
+    align-items: stretch;
+    width: 100%;
+  }
+  .form-control {
+    border-radius: 0px 2px 2px 0px;
+  }
+  .input-group-text {
+    border-radius: 0px;
+  }
+  label {
+    margin-bottom: 0px;
+    padding: 2px;
+    margin-left: 2px;
+  }
+/* @keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:100px; top:0px;}
+    50%  {left:100px; top:50px;}
+    75%  {left:0px; top:50px;}
+    100% {left:0px; top:0px;}
+} */
+@media (max-width: 600px) {
+    .about {
+        flex-direction: column;
+        margin: 25px 25px;
+    }
+    .content {
+        width: 100%;
+    }
+    h1, p {
+        justify-self:center;
+    }
+    .photo img {
+        width: 38vh;
+        border-radius: 50px;
+    }
+}
+@media (max-width: 1250px) and (min-width: 600px) {
+    .about {
+        flex-direction: column;
+        margin: 50px 50px;
+    }
+    .content {
+        width: 100%;
+    }
+    h1, p {
+        justify-self:center;
+    }
+    .photo img {
+        width: 38vh;
+        border-radius: 50px;
+        justify-self: center;
+    }
+}
